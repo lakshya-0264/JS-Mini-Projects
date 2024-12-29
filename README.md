@@ -25,6 +25,7 @@
    ```bash
     cd Js-Mini-Projects
    ```
+
 4. Create a new folder with your project name inside the Js-Mini-Projects & Add your project files (eg: index.html ,style.css, script.js) inside that folder you created earlier.
 
 5. You can also add a README.md file in your project folder for give description about your project !
@@ -38,9 +39,10 @@
    ```bash
      git add .
     ```
+
     ```bash
-  git commit -m "<your_commit_message>"
-   ```
+     git commit -m "<your_commit_message>"
+    ```
 
 8. **Push your local branch to the remote repository:**  
    ```bash
@@ -50,6 +52,7 @@
 9. Create a Pull Request and Contribute!
 
 Congratulations! You have done it!, We will check your request and Approve accordingly.
+
 ---
 
 ## 🛠️ Languages and Tools Used
