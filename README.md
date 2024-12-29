@@ -1,6 +1,6 @@
 # JS-Mini-Projects
 
-<p align="center">
+<p>
   Discover a collection of exciting JavaScript projects designed for learning, experimenting, and mastering the art of web development. Whether you're a beginner starting out or an experienced developer honing your skills, this repository has something for everyone. Dive into the code, contribute your ideas, and embrace the joy of creating with JavaScript. Happy coding! 🌟
 </p>
 
@@ -23,7 +23,7 @@
 3. **Navigate to the Frontend Directory:**  
    Move to the "Js-Mini-Projects" directory:  
    ```bash
-   cd Js-Mini-Projects
+    cd Js-Mini-Projects
    ```
 4. Create a new folder with your project name inside the Js-Mini-Projects & Add your project files (eg: index.html ,style.css, script.js) inside that folder you created earlier.
 
@@ -37,6 +37,8 @@
 7. **Add and Commit your changes:**  
    ```bash
      git add .
+    ```
+    ```bash
   git commit -m "<your_commit_message>"
    ```
 
