@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter App</title>
+
+    <style>
+      /* Chrome, Safari, Edge, Opera */
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      Firefox
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }
+    </style>
+
+    <!-- Link Tailwind CSS  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <!-- Wrapper -->
+    <div class="w-[100vw] h-[100vh] bg-[#c89797] flex justify-center items-center box-border">
+      <div class="flex justify-center items-center flex-col gap-10 space-y-2 max-w-[400px]">
+        <h1 class="font-medium text-[20px] p-3 rounded-sm w-[100%] text-center bg-[#252424] text-[#d32f2f]">
+        Increment And Decrement Counter
+        </h1>
+
+        <div class="flex gap-12 p-3 px-6 bg-white rounded-sm text-[25px] text-[#344151] w-[100%] justify-between items-center">
+          <button id="dec" class="border-[#bfbfbf] border-r-2 pr-5">
+            -<i class="fa-solid fa-minus"></i>
+          </button>
+          <p id="counter" class="font-bold">0</p>
+          <button id="inc" class="border-[#bfbfbf] border-l-2 pl-5">
+            +<i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+
+        <div class="flex flex-col w-[100%] space-y-3">
+
+          <!--Increment Update-->
+          <div class="flex w-[100%]">
+            <input
+              type="number"
+              placeholder="Increment by Value"
+              onfocus="this.placeholder=''"
+              onblur="this.placeholder='Increment by Value'"
+              class="rounded-sm text-center p-2 px-6 font-medium w-[70%] outline-none border-none caret-[#636c72]"
+            />
+            <button id="incUpdate" class="bg-[#d32f2f] rounded-sm text-center p-2 px-6 font-medium w-[30%]">Update</button>
+          </div>
+
+          <!--Decrement Update-->
+          <div class="flex w-[100%]">
+            <input
+              type="number"
+              placeholder="Decrement by Value"
+              onfocus="this.placeholder=''"
+              onblur="this.placeholder='Decrement by Value'"
+              class="rounded-sm text-center p-2 px-6 font-medium w-[70%] outline-none border-none caret-[#636c72]"
+            />
+            <button id="decUpdate" class="bg-[#d32f2f] rounded-sm text-center p-2 px-6 font-medium w-[30%]">Update</button>
+          </div>
+
+          <!--Clear-->
+          <button id="clr" class="bg-[#d32f2f] text-yellow text-xl rounded-sm text-center p-2 px-6 font-medium">Clear</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js" defer></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+  </body>
+</html>

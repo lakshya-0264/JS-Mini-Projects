@@ -1,0 +1,119 @@
+/* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* height:fit-content; */
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #c89797;
+  color: #e5e5e5;
+  padding: 25px;
+  display:flex;
+  /* justify-content: center; */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center content horizontally */
+  justify-content: space-between; /* Space items apart, pushing copyright to the bottom */
+}
+
+.container {
+  background-color: #252424;
+  padding: 20px;
+  border-radius: 10px;
+  width: 600px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px; /* Add spacing before the copyright */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.input-container {
+  display: flex;
+  gap:10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  background-color: #333333;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  outline: none;
+}
+
+button {
+  width: 25%;
+  padding: 10px;
+  background-color: #6200ea;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3700b3;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #333333;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+li.completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+li button {
+  background-color: #d32f2f;
+  border: none;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+li #edit {
+  margin-left: auto; /* Push the edit button to the right */
+}
+
+li #delete {
+  margin-left: 10px; /* Add space between edit and delete buttons */
+}
+
+li button:hover {
+  background-color: #b71c1c;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #333333;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+}
